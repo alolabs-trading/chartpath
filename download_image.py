@@ -1,7 +1,6 @@
 import requests
 import os
 from urllib.parse import urlparse
-import time
 
 def download_image(url, save_folder="/chart"):
     try:
@@ -44,6 +43,3 @@ if __name__ == "__main__":
     # Use a real PNG image URL (public domain image from Unsplash)
     image_url = "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?fm=png"
     download_image(image_url)
-    print("Script completed, keeping process alive...")
-    while True:
-        time.sleep(60)  # Sleep for 60 seconds to keep the process running
